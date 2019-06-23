@@ -7,17 +7,18 @@ pageEncoding="ISO-8859-1"%>
 </head>
 <body>
     <h1>Signup</h1>
+    <p>${msg}</p>
     <form action="/signup" method="POST">
-        First Name: <input type="text" name="firstname"><br>
-        Last Name: <input type="text" name="lastname"><br>
-        Date of Birth: <input type="date" name="dob"><br>
-        Account Type: <select name="type" type="text">
+        First Name: <input type="text" name="firstName" required><br>
+        Last Name: <input type="text" name="lastName" required><br>
+        Date of Birth: <input type="date" name="dob" required><br>
+        Account Type: <select name="type" type="text" required>
                 <option value="client">Client</option>
                 <option value="employee">Employee</option>
               </select><br>
-        Loggin Id: <input type="text" name="id"><br>
-        Loggin Password: <input type="text" name="password"><br>
-        <input type="submit" value="Submit">
+        Loggin Id: <input type="text" name="id" required><br>
+        Loggin Password: <input type="text" name="password" required><br>
+        <input type="submit" value="Submit" required>
       </form>
 </body>
 </html>

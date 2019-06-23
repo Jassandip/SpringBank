@@ -8,29 +8,44 @@ public class Account{
     String firstName;  
     String lastName; 
     Date dob;
-    Date initDate;  
-    int accId;
     String type;
        
-     
+    public String getFirstName() {
+        return firstName;
+    }
 
-    public Account(String firstname, String lastname, Date dateofbirth, Date initdate, int accountId, String type){   
-        this.firstName = firstname;  
-        this.lastName = lastname;
-        this.dob = dateofbirth;  
+    public void setFirstName(String firstName) {
+        this.firstName = firstName;
+    }
+
+    public String getLastName() {
+        return lastName;
+    }
+
+    public void setLastName(String lastName) {
+        this.lastName = lastName;
+    }
+
+    public Date getDob() {
+        return dob;
+    }
+
+    public void setDob(Date dob) {
+        this.dob = dob;
+    }
+
+    public String getType() {
+        return type;
+    }
+
+    public void setType(String type) {
         this.type = type;
-        
-        this.initDate = initdate;
-        this.accId = accountId;
-        
-    }  
-    public void info(){
-         System.out.println("Account: "+accId+" Firstname: "+firstName);
-    }  
-        
-    // public static void main(String args[]){  
-    //  Account obj1 = new Account("Jassandip","Shina",21413,"jassandips");  
-    //  obj1.info();  
+    }
 
-    // }  
+    public Account(String firstName, String lastName, Date dob, String type) {
+        this.firstName = firstName;
+        this.lastName = lastName;
+        this.dob = dob;
+        this.type = type;
+    }
 }
