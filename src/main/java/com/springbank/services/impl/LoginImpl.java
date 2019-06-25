@@ -58,7 +58,7 @@ public class LoginImpl implements LoginServices {
             rs.next();
             String type = rs.getString("type");
             conn.close();
-            if (type.equals("Employee")) {
+            if (type.equals("employee")) {
                 user = employeeLoader(idAndPass[0]);
             } else {
                 user = clientLoader(idAndPass[0]);
@@ -103,7 +103,7 @@ public class LoginImpl implements LoginServices {
     }
 
     public static Client clientLoader(String id) throws SQLException {
-        System.out.println("Entered asimpl login");
+        System.out.println("Entered asimpl clientloader");
         Connection conn = null;
         Client user;
         try {
@@ -119,7 +119,6 @@ public class LoginImpl implements LoginServices {
             return user;
 
         }
-        // worked up to this part
         catch (SQLException e) {
             System.err.println(e);
             // dummy user incase loggin fails

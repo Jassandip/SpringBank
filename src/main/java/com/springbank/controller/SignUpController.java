@@ -35,10 +35,8 @@ public class SignUpController {
         System.out.println(new Timestamp(System.currentTimeMillis()));
         SignupImpl si = new SignupImpl();
         System.out.println(account.getDob());
-        System.out.println(account.getFirstName());
-        if (si.Account(account) & si.Login(login)) {
-            // model.addAttribute("msg","Successfully made your account!");
-            // return "signup";
+        System.out.println(account.getType());
+        if (si.Login(login) & si.Account(account)) {
             return "loggin";
         } else {
             model.addAttribute("msg","Were not able to make the account, try again!");

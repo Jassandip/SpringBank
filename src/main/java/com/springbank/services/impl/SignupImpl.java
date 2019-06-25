@@ -19,7 +19,7 @@ public class SignupImpl implements SignupServices {
         Connection conn = MySqlDao.getConnection();
         PreparedStatement ps;
         try{
-        if (account.getType().equals("Employee")){
+        if (account.getType().equals("employee")){
             ps = conn.prepareStatement("Insert into employees (id,firstname,lastname,dob,accinitdate) Values (?,?,?,?,?);");
         }
         else {
