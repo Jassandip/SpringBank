@@ -8,7 +8,7 @@ private static final String USERNAME = "root";
 private static final String PASSWORD = "jassan69";
 private static final String CONN_STRING = "jdbc:mysql://localhost:3306/Bank?useUnicode=true&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=UTC";
 
-    public static void main(String[] args) {
+    public static void databasedao(String[] args) {
         Connection conn = null;
         try {
             Class.forName("com.mysql.cj.jdbc.Driver");

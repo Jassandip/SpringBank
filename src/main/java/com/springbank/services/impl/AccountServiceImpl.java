@@ -1,6 +1,8 @@
 package com.springbank.services.impl;
 
-import com.springbank.services.AccountService;
+import com.springbank.services.AccountServices;
+
+import org.springframework.web.bind.annotation.SessionAttributes;
 
 import java.sql.Connection;
 import java.sql.Date;
@@ -9,32 +11,57 @@ import java.sql.ResultSet;
 import java.sql.SQLException;
 
 import com.springbank.dao.impl.MySqlDao;
+@SessionAttributes("test")
+public class AccountServiceImpl implements AccountServices {
 
-public class AccountServiceImpl implements AccountService {
-
-    public static Boolean authenticate(String[] idAndPass) throws SQLException {
+    public static boolean authenticate(String[] idAndPass) throws SQLException {
         System.out.println("Entered asimpl");
-        Boolean authenticate = null;
+        boolean authenticate = false;
         Connection conn = null;
         try {
-        conn = MySqlDao.getConnection();
-        PreparedStatement ps;
-        ps = conn.prepareStatement("Select password from Bank.loggin where id = 'jashan';");
-        // ps.setString(1,idAndPass[0]);
-        ResultSet rs = ps.executeQuery();
-        rs.next();
-        System.out.println(rs.getString("password"));
-        authenticate = true;
-        }
-        catch (SQLException e){
+            conn = MySqlDao.getConnection();
+            PreparedStatement ps;
+            ps = conn.prepareStatement("Select * from loggin where id = ? and password = ?;");
+            ps.setString(1, idAndPass[0]);
+            ps.setString(2, idAndPass[1]);
+            ResultSet rs = ps.executeQuery();
+            if (rs.next()) {
+                System.out.println(rs.getString("type"));   
+                authenticate = true;
+            }
+            // worked up to this part
+        } catch (SQLException e) {
             System.err.println(e);
             authenticate = false;
-        }
-        finally {
+        } 
             conn.close();
             return authenticate;
-        }
-
-
+        
+    }
     
-}}
+    public static Object login(String[] idAndPass) throws SQLException {
+        System.out.println("Entered asimpl login");
+        Connection conn = null;
+        try {
+            conn = MySqlDao.getConnection();
+            PreparedStatement ps;
+            ps = conn.prepareStatement("Select * from loggin where id = ? and password = ?;");
+            ps.setString(1, idAndPass[0]);
+            ps.setString(2, idAndPass[1]);
+            ResultSet rs = ps.executeQuery();
+            if (rs.next()) {
+                System.out.println(rs.getString("type"));   
+                authenticate = true;
+            }
+            // worked up to this part
+        } catch (SQLException e) {
+            System.err.println(e);
+            authenticate = false;
+        } 
+            conn.close();
+            return authenticate;
+        
+    }
+
+
+}

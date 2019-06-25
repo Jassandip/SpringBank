@@ -37,8 +37,9 @@ public class SignUpController {
         System.out.println(account.getDob());
         System.out.println(account.getFirstName());
         if (si.Account(account) & si.Login(login)) {
-            model.addAttribute("msg","Successfully made your account!");
-            return "signup";
+            // model.addAttribute("msg","Successfully made your account!");
+            // return "signup";
+            return "loggin";
         } else {
             model.addAttribute("msg","Were not able to make the account, try again!");
             return "signup";

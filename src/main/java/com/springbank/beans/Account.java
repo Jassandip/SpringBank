@@ -5,11 +5,13 @@ import java.sql.Date;
 // import java.util.Date;
 
 public class Account{
+    String id;
     String firstName;  
     String lastName; 
     Date dob;
     String type;
-       
+    
+    
     public String getFirstName() {
         return firstName;
     }
@@ -42,10 +44,21 @@ public class Account{
         this.type = type;
     }
 
-    public Account(String firstName, String lastName, Date dob, String type) {
+    public Account(String id, String firstName, String lastName, Date dob, String type) {
         this.firstName = firstName;
         this.lastName = lastName;
         this.dob = dob;
         this.type = type;
+        this.id = id;
     }
+
+
+	public String getId() {
+        return id;
+    }
+
+    public void setId(String id) {
+        this.id = id;
+    }
+
 }

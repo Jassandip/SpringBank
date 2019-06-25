@@ -7,6 +7,8 @@ pageEncoding="ISO-8859-1"%>
 </head>
 <body>
     <h1>Loggin</h1>
+    <p>${msg}</p>
+    <p>${type}</p>
     <form action="/loggin" method="POST">
         Id: <input type="text" name="id"><br>
         Password: <input type="text" name="password"><br>

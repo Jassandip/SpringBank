@@ -1,6 +1,6 @@
 package com.springbank.services;
 
-public interface AccountService{
+public interface LoginServices{
  
     public static Boolean authenticate(){
         return false;
