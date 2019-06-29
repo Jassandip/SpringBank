@@ -1,0 +1,116 @@
+"2019-06-28 [restartedMain]Â %PARSER_ERROR[levelÂ] com.springbank.SpringBankApplication -Â Starting SpringBankApplication on Jassandips-MBP.fios-router.home with PID 36420 (/Users/Jassandip/Desktop/Code/java/SpringBank/target/classes started by Jassandip in /Users/Jassandip/Desktop/Code/java/SpringBank)
+""2019-06-28 [restartedMain]Â %PARSER_ERROR[levelÂ] com.springbank.SpringBankApplication -Â No active profile set, falling back to default profiles: default
+""2019-06-28 [restartedMain]Â %PARSER_ERROR[levelÂ] o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor -Â Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+""2019-06-28 [restartedMain]Â %PARSER_ERROR[levelÂ] o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor -Â For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+""2019-06-28 [restartedMain]Â %PARSER_ERROR[levelÂ] o.s.b.w.e.tomcat.TomcatWebServer -Â Tomcat initialized with port(s): 8080 (http)
+""2019-06-28 [restartedMain]Â %PARSER_ERROR[levelÂ] o.a.catalina.core.StandardService -Â Starting service [Tomcat]
+""2019-06-28 [restartedMain]Â %PARSER_ERROR[levelÂ] o.a.catalina.core.StandardEngine -Â Starting Servlet engine: [Apache Tomcat/9.0.19]
+""2019-06-28 [restartedMain]Â %PARSER_ERROR[levelÂ] org.apache.jasper.servlet.TldScanner -Â At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+""2019-06-28 [restartedMain]Â %PARSER_ERROR[levelÂ] o.a.c.c.C.[Tomcat].[localhost].[/] -Â Initializing Spring embedded WebApplicationContext
+""2019-06-28 [restartedMain]Â %PARSER_ERROR[levelÂ] o.s.web.context.ContextLoader -Â Published root WebApplicationContext as ServletContext attribute with name [org.springframework.web.context.WebApplicationContext.ROOT]
+""2019-06-28 [restartedMain]Â %PARSER_ERROR[levelÂ] o.s.web.context.ContextLoader -Â Root WebApplicationContext: initialization completed in 3263 ms
+""2019-06-28 [restartedMain]Â %PARSER_ERROR[levelÂ] o.s.w.s.h.SimpleUrlHandlerMapping -Â Patterns [/**/favicon.ico] in 'faviconHandlerMapping'
+""2019-06-28 [restartedMain]Â %PARSER_ERROR[levelÂ] o.s.s.c.ThreadPoolTaskExecutor -Â Initializing ExecutorService 'applicationTaskExecutor'
+""2019-06-28 [restartedMain]Â %PARSER_ERROR[levelÂ] o.s.w.s.m.m.a.RequestMappingHandlerAdapter -Â ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+""2019-06-28 [restartedMain]Â %PARSER_ERROR[levelÂ] o.s.w.s.m.m.a.RequestMappingHandlerMapping -Â 9 mappings in 'requestMappingHandlerMapping'
+""2019-06-28 [restartedMain]Â %PARSER_ERROR[levelÂ] o.s.w.s.h.SimpleUrlHandlerMapping -Â Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+""2019-06-28 [restartedMain]Â %PARSER_ERROR[levelÂ] o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver -Â ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+""2019-06-28 [restartedMain]Â %PARSER_ERROR[levelÂ] o.s.b.d.a.OptionalLiveReloadServer -Â LiveReload server is running on port 35729
+""2019-06-28 [restartedMain]Â %PARSER_ERROR[levelÂ] o.s.b.w.e.tomcat.TomcatWebServer -Â Tomcat started on port(s): 8080 (http) with context path ''
+""2019-06-28 [restartedMain]Â %PARSER_ERROR[levelÂ] com.springbank.SpringBankApplication -Â Started SpringBankApplication in 5.247 seconds (JVM running for 6.158)
+""2019-06-28 [Thread-5]Â %PARSER_ERROR[levelÂ] o.s.s.c.ThreadPoolTaskExecutor -Â Shutting down ExecutorService 'applicationTaskExecutor'
+""2019-06-28 [restartedMain]Â %PARSER_ERROR[levelÂ] com.springbank.SpringBankApplication -Â Starting SpringBankApplication on Jassandips-MBP.fios-router.home with PID 36420 (/Users/Jassandip/Desktop/Code/java/SpringBank/target/classes started by Jassandip in /Users/Jassandip/Desktop/Code/java/SpringBank)
+""2019-06-28 [restartedMain]Â %PARSER_ERROR[levelÂ] com.springbank.SpringBankApplication -Â No active profile set, falling back to default profiles: default
+""2019-06-28 [restartedMain]Â %PARSER_ERROR[levelÂ] o.s.b.w.e.tomcat.TomcatWebServer -Â Tomcat initialized with port(s): 8080 (http)
+""2019-06-28 [restartedMain]Â %PARSER_ERROR[levelÂ] o.a.catalina.core.StandardService -Â Starting service [Tomcat]
+""2019-06-28 [restartedMain]Â %PARSER_ERROR[levelÂ] o.a.catalina.core.StandardEngine -Â Starting Servlet engine: [Apache Tomcat/9.0.19]
+""2019-06-28 [restartedMain]Â %PARSER_ERROR[levelÂ] org.apache.jasper.servlet.TldScanner -Â At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+""2019-06-28 [restartedMain]Â %PARSER_ERROR[levelÂ] o.a.c.c.C.[Tomcat].[localhost].[/] -Â Initializing Spring embedded WebApplicationContext
+""2019-06-28 [restartedMain]Â %PARSER_ERROR[levelÂ] o.s.web.context.ContextLoader -Â Published root WebApplicationContext as ServletContext attribute with name [org.springframework.web.context.WebApplicationContext.ROOT]
+""2019-06-28 [restartedMain]Â %PARSER_ERROR[levelÂ] o.s.web.context.ContextLoader -Â Root WebApplicationContext: initialization completed in 816 ms
+""2019-06-28 [restartedMain]Â %PARSER_ERROR[levelÂ] o.s.w.s.h.SimpleUrlHandlerMapping -Â Patterns [/**/favicon.ico] in 'faviconHandlerMapping'
+""2019-06-28 [restartedMain]Â %PARSER_ERROR[levelÂ] o.s.s.c.ThreadPoolTaskExecutor -Â Initializing ExecutorService 'applicationTaskExecutor'
+""2019-06-28 [restartedMain]Â %PARSER_ERROR[levelÂ] o.s.w.s.m.m.a.RequestMappingHandlerAdapter -Â ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+""2019-06-28 [restartedMain]Â %PARSER_ERROR[levelÂ] o.s.w.s.m.m.a.RequestMappingHandlerMapping -Â 9 mappings in 'requestMappingHandlerMapping'
+""2019-06-28 [restartedMain]Â %PARSER_ERROR[levelÂ] o.s.w.s.h.SimpleUrlHandlerMapping -Â Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+""2019-06-28 [restartedMain]Â %PARSER_ERROR[levelÂ] o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver -Â ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+""2019-06-28 [restartedMain]Â %PARSER_ERROR[levelÂ] o.s.b.d.a.OptionalLiveReloadServer -Â LiveReload server is running on port 35729
+""2019-06-28 [restartedMain]Â %PARSER_ERROR[levelÂ] o.s.b.w.e.tomcat.TomcatWebServer -Â Tomcat started on port(s): 8080 (http) with context path ''
+""2019-06-28 [restartedMain]Â %PARSER_ERROR[levelÂ] com.springbank.SpringBankApplication -Â Started SpringBankApplication in 1.964 seconds (JVM running for 24.701)
+""2019-06-28 [restartedMain]Â %PARSER_ERROR[levelÂ] o.s.b.d.a.ConditionEvaluationDeltaLoggingListener -Â Condition evaluation unchanged
+""2019-06-28 [http-nio-8080-exec-1]Â %PARSER_ERROR[levelÂ] o.a.c.c.C.[Tomcat].[localhost].[/] -Â Initializing Spring DispatcherServlet 'dispatcherServlet'
+""2019-06-28 [http-nio-8080-exec-1]Â %PARSER_ERROR[levelÂ] o.s.web.servlet.DispatcherServlet -Â Initializing Servlet 'dispatcherServlet'
+""2019-06-28 [http-nio-8080-exec-1]Â %PARSER_ERROR[levelÂ] o.s.web.servlet.DispatcherServlet -Â Detected StandardServletMultipartResolver
+""2019-06-28 [http-nio-8080-exec-1]Â %PARSER_ERROR[levelÂ] o.s.web.servlet.DispatcherServlet -Â enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+""2019-06-28 [http-nio-8080-exec-1]Â %PARSER_ERROR[levelÂ] o.s.web.servlet.DispatcherServlet -Â Completed initialization in 16 ms
+""2019-06-28 [http-nio-8080-exec-1]Â %PARSER_ERROR[levelÂ] o.s.web.servlet.DispatcherServlet -Â GET "/", parameters={}
+""2019-06-28 [http-nio-8080-exec-1]Â %PARSER_ERROR[levelÂ] o.s.w.s.m.m.a.RequestMappingHandlerMapping -Â Mapped to public java.lang.String com.springbank.controller.LogginController.home(java.util.Map<java.lang.String, java.lang.Object>)
+""2019-06-28 [http-nio-8080-exec-1]Â %PARSER_ERROR[levelÂ] c.s.controller.LogginController -Â some message for info
+""2019-06-28 [http-nio-8080-exec-1]Â %PARSER_ERROR[levelÂ] c.s.controller.LogginController -Â Warning for this application
+""2019-06-28 [http-nio-8080-exec-1]Â %PARSER_ERROR[levelÂ] c.s.controller.LogginController -Â Seems error in the application
+""2019-06-28 [http-nio-8080-exec-1]Â %PARSER_ERROR[levelÂ] o.s.w.s.v.ContentNegotiatingViewResolver -Â Selected 'text/html' given [text/html, application/xhtml+xml, image/webp, image/apng, application/signed-exchange;v=b3, application/xml;q=0.9, */*;q=0.8]
+""2019-06-28 [http-nio-8080-exec-1]Â %PARSER_ERROR[levelÂ] o.s.web.servlet.view.JstlView -Â View name 'start', model {}
+""2019-06-28 [http-nio-8080-exec-1]Â %PARSER_ERROR[levelÂ] o.s.web.servlet.view.JstlView -Â Forwarding to [/WEB-INF/jsp/start.jsp]
+""2019-06-28 [http-nio-8080-exec-1]Â %PARSER_ERROR[levelÂ] o.s.web.servlet.DispatcherServlet -Â Completed 200 OK
+""2019-06-28 [http-nio-8080-exec-2]Â %PARSER_ERROR[levelÂ] o.s.web.servlet.DispatcherServlet -Â GET "/favicon.ico", parameters={}
+""2019-06-28 [http-nio-8080-exec-2]Â %PARSER_ERROR[levelÂ] o.s.w.s.h.SimpleUrlHandlerMapping -Â Mapped to ResourceHttpRequestHandler [class path resource [META-INF/resources/], class path resource [resources/], class path resource [static/], class path resource [public/], ServletContext resource [/], class path resource []]
+""2019-06-28 [http-nio-8080-exec-2]Â %PARSER_ERROR[levelÂ] o.s.web.servlet.DispatcherServlet -Â Completed 200 OK
+""2019-06-28 [Thread-9]Â %PARSER_ERROR[levelÂ] o.s.s.c.ThreadPoolTaskExecutor -Â Shutting down ExecutorService 'applicationTaskExecutor'
+""2019-06-28 [restartedMain]Â %PARSER_ERROR[levelÂ] com.springbank.SpringBankApplication -Â Starting SpringBankApplication on Jassandips-MBP.fios-router.home with PID 36420 (/Users/Jassandip/Desktop/Code/java/SpringBank/target/classes started by Jassandip in /Users/Jassandip/Desktop/Code/java/SpringBank)
+""2019-06-28 [restartedMain]Â %PARSER_ERROR[levelÂ] com.springbank.SpringBankApplication -Â No active profile set, falling back to default profiles: default
+""2019-06-28 [restartedMain]Â %PARSER_ERROR[levelÂ] o.s.b.w.e.tomcat.TomcatWebServer -Â Tomcat initialized with port(s): 8080 (http)
+""2019-06-28 [restartedMain]Â %PARSER_ERROR[levelÂ] o.a.catalina.core.StandardService -Â Starting service [Tomcat]
+""2019-06-28 [restartedMain]Â %PARSER_ERROR[levelÂ] o.a.catalina.core.StandardEngine -Â Starting Servlet engine: [Apache Tomcat/9.0.19]
+""2019-06-28 [restartedMain]Â %PARSER_ERROR[levelÂ] org.apache.jasper.servlet.TldScanner -Â At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+""2019-06-28 [restartedMain]Â %PARSER_ERROR[levelÂ] o.a.c.c.C.[Tomcat].[localhost].[/] -Â Initializing Spring embedded WebApplicationContext
+""2019-06-28 [restartedMain]Â %PARSER_ERROR[levelÂ] o.s.web.context.ContextLoader -Â Published root WebApplicationContext as ServletContext attribute with name [org.springframework.web.context.WebApplicationContext.ROOT]
+""2019-06-28 [restartedMain]Â %PARSER_ERROR[levelÂ] o.s.web.context.ContextLoader -Â Root WebApplicationContext: initialization completed in 646 ms
+""2019-06-28 [restartedMain]Â %PARSER_ERROR[levelÂ] o.s.w.s.h.SimpleUrlHandlerMapping -Â Patterns [/**/favicon.ico] in 'faviconHandlerMapping'
+""2019-06-28 [restartedMain]Â %PARSER_ERROR[levelÂ] o.s.s.c.ThreadPoolTaskExecutor -Â Initializing ExecutorService 'applicationTaskExecutor'
+""2019-06-28 [restartedMain]Â %PARSER_ERROR[levelÂ] o.s.w.s.m.m.a.RequestMappingHandlerAdapter -Â ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+""2019-06-28 [restartedMain]Â %PARSER_ERROR[levelÂ] o.s.w.s.m.m.a.RequestMappingHandlerMapping -Â 9 mappings in 'requestMappingHandlerMapping'
+""2019-06-28 [restartedMain]Â %PARSER_ERROR[levelÂ] o.s.w.s.h.SimpleUrlHandlerMapping -Â Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+""2019-06-28 [restartedMain]Â %PARSER_ERROR[levelÂ] o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver -Â ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+""2019-06-28 [restartedMain]Â %PARSER_ERROR[levelÂ] o.s.b.d.a.OptionalLiveReloadServer -Â LiveReload server is running on port 35729
+""2019-06-28 [restartedMain]Â %PARSER_ERROR[levelÂ] o.s.b.w.e.tomcat.TomcatWebServer -Â Tomcat started on port(s): 8080 (http) with context path ''
+""2019-06-28 [restartedMain]Â %PARSER_ERROR[levelÂ] com.springbank.SpringBankApplication -Â Started SpringBankApplication in 1.02 seconds (JVM running for 44.326)
+""2019-06-28 [restartedMain]Â %PARSER_ERROR[levelÂ] o.s.b.d.a.ConditionEvaluationDeltaLoggingListener -Â Condition evaluation unchanged
+""2019-06-28 [http-nio-8080-exec-1]Â %PARSER_ERROR[levelÂ] o.a.c.c.C.[Tomcat].[localhost].[/] -Â Initializing Spring DispatcherServlet 'dispatcherServlet'
+""2019-06-28 [http-nio-8080-exec-1]Â %PARSER_ERROR[levelÂ] o.s.web.servlet.DispatcherServlet -Â Initializing Servlet 'dispatcherServlet'
+""2019-06-28 [http-nio-8080-exec-1]Â %PARSER_ERROR[levelÂ] o.s.web.servlet.DispatcherServlet -Â Detected StandardServletMultipartResolver
+""2019-06-28 [http-nio-8080-exec-1]Â %PARSER_ERROR[levelÂ] o.s.web.servlet.DispatcherServlet -Â enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+""2019-06-28 [http-nio-8080-exec-1]Â %PARSER_ERROR[levelÂ] o.s.web.servlet.DispatcherServlet -Â Completed initialization in 7 ms
+""2019-06-28 [http-nio-8080-exec-1]Â %PARSER_ERROR[levelÂ] o.s.web.servlet.DispatcherServlet -Â GET "/", parameters={}
+""2019-06-28 [http-nio-8080-exec-1]Â %PARSER_ERROR[levelÂ] o.s.w.s.m.m.a.RequestMappingHandlerMapping -Â Mapped to public java.lang.String com.springbank.controller.LogginController.home(java.util.Map<java.lang.String, java.lang.Object>)
+""2019-06-28 [http-nio-8080-exec-1]Â %PARSER_ERROR[levelÂ] c.s.controller.LogginController -Â some message for info
+""2019-06-28 [http-nio-8080-exec-1]Â %PARSER_ERROR[levelÂ] c.s.controller.LogginController -Â Warning for this application
+""2019-06-28 [http-nio-8080-exec-1]Â %PARSER_ERROR[levelÂ] c.s.controller.LogginController -Â Seems error in the application
+""2019-06-28 [http-nio-8080-exec-1]Â %PARSER_ERROR[levelÂ] o.s.w.s.v.ContentNegotiatingViewResolver -Â Selected 'text/html' given [text/html, application/xhtml+xml, image/webp, image/apng, application/signed-exchange;v=b3, application/xml;q=0.9, */*;q=0.8]
+""2019-06-28 [http-nio-8080-exec-1]Â %PARSER_ERROR[levelÂ] o.s.web.servlet.view.JstlView -Â View name 'start', model {}
+""2019-06-28 [http-nio-8080-exec-1]Â %PARSER_ERROR[levelÂ] o.s.web.servlet.view.JstlView -Â Forwarding to [/WEB-INF/jsp/start.jsp]
+""2019-06-28 [http-nio-8080-exec-1]Â %PARSER_ERROR[levelÂ] o.s.web.servlet.DispatcherServlet -Â Completed 200 OK
+""2019-06-28 [http-nio-8080-exec-2]Â %PARSER_ERROR[levelÂ] o.s.web.servlet.DispatcherServlet -Â GET "/favicon.ico", parameters={}
+""2019-06-28 [http-nio-8080-exec-2]Â %PARSER_ERROR[levelÂ] o.s.w.s.h.SimpleUrlHandlerMapping -Â Mapped to ResourceHttpRequestHandler [class path resource [META-INF/resources/], class path resource [resources/], class path resource [static/], class path resource [public/], ServletContext resource [/], class path resource []]
+""2019-06-28 [http-nio-8080-exec-2]Â %PARSER_ERROR[levelÂ] o.s.web.servlet.DispatcherServlet -Â Completed 200 OK
+""2019-06-28 [Thread-15]Â %PARSER_ERROR[levelÂ] o.s.s.c.ThreadPoolTaskExecutor -Â Shutting down ExecutorService 'applicationTaskExecutor'
+""2019-06-28 [restartedMain]Â %PARSER_ERROR[levelÂ] com.springbank.SpringBankApplication -Â Starting SpringBankApplication on Jassandips-MBP.fios-router.home with PID 36420 (/Users/Jassandip/Desktop/Code/java/SpringBank/target/classes started by Jassandip in /Users/Jassandip/Desktop/Code/java/SpringBank)
+""2019-06-28 [restartedMain]Â %PARSER_ERROR[levelÂ] com.springbank.SpringBankApplication -Â No active profile set, falling back to default profiles: default
+""2019-06-28 [restartedMain]Â %PARSER_ERROR[levelÂ] o.s.b.w.e.tomcat.TomcatWebServer -Â Tomcat initialized with port(s): 8080 (http)
+""2019-06-28 [restartedMain]Â %PARSER_ERROR[levelÂ] o.a.catalina.core.StandardService -Â Starting service [Tomcat]
+""2019-06-28 [restartedMain]Â %PARSER_ERROR[levelÂ] o.a.catalina.core.StandardEngine -Â Starting Servlet engine: [Apache Tomcat/9.0.19]
+""2019-06-28 [restartedMain]Â %PARSER_ERROR[levelÂ] org.apache.jasper.servlet.TldScanner -Â At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+""2019-06-28 [restartedMain]Â %PARSER_ERROR[levelÂ] o.a.c.c.C.[Tomcat].[localhost].[/] -Â Initializing Spring embedded WebApplicationContext
+""2019-06-28 [restartedMain]Â %PARSER_ERROR[levelÂ] o.s.web.context.ContextLoader -Â Published root WebApplicationContext as ServletContext attribute with name [org.springframework.web.context.WebApplicationContext.ROOT]
+""2019-06-28 [restartedMain]Â %PARSER_ERROR[levelÂ] o.s.web.context.ContextLoader -Â Root WebApplicationContext: initialization completed in 378 ms
+""2019-06-28 [restartedMain]Â %PARSER_ERROR[levelÂ] o.s.w.s.h.SimpleUrlHandlerMapping -Â Patterns [/**/favicon.ico] in 'faviconHandlerMapping'
+""2019-06-28 [restartedMain]Â %PARSER_ERROR[levelÂ] o.s.s.c.ThreadPoolTaskExecutor -Â Initializing ExecutorService 'applicationTaskExecutor'
+""2019-06-28 [restartedMain]Â %PARSER_ERROR[levelÂ] o.s.w.s.m.m.a.RequestMappingHandlerAdapter -Â ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+""2019-06-28 [restartedMain]Â %PARSER_ERROR[levelÂ] o.s.w.s.m.m.a.RequestMappingHandlerMapping -Â 9 mappings in 'requestMappingHandlerMapping'
+""2019-06-28 [restartedMain]Â %PARSER_ERROR[levelÂ] o.s.w.s.h.SimpleUrlHandlerMapping -Â Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+""2019-06-28 [restartedMain]Â %PARSER_ERROR[levelÂ] o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver -Â ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+""2019-06-28 [restartedMain]Â %PARSER_ERROR[levelÂ] o.s.b.d.a.OptionalLiveReloadServer -Â LiveReload server is running on port 35729
+""2019-06-28 [restartedMain]Â %PARSER_ERROR[levelÂ] o.s.b.w.e.tomcat.TomcatWebServer -Â Tomcat started on port(s): 8080 (http) with context path ''
+""2019-06-28 [restartedMain]Â %PARSER_ERROR[levelÂ] com.springbank.SpringBankApplication -Â Started SpringBankApplication in 0.675 seconds (JVM running for 81.793)
+""2019-06-28 [restartedMain]Â %PARSER_ERROR[levelÂ] o.s.b.d.a.ConditionEvaluationDeltaLoggingListener -Â Condition evaluation unchanged
+""2019-06-28 [Thread-21]Â %PARSER_ERROR[levelÂ] o.s.s.c.ThreadPoolTaskExecutor -Â Shutting down ExecutorService 'applicationTaskExecutor'
+"

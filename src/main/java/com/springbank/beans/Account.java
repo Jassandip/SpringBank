@@ -2,8 +2,6 @@ package com.springbank.beans;
 
 import java.sql.Date;
 
-// import java.util.Date;
-
 public class Account{
     String id;
     String firstName;  
@@ -52,6 +50,9 @@ public class Account{
         this.id = id;
     }
 
+
+	public Account() {
+    }
 
 	public String getId() {
         return id;

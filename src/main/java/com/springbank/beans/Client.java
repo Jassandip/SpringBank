@@ -10,7 +10,6 @@ public class Client extends Account {
     public Client(String id, String firstName, String lastName, Date dob, Timestamp accInitDate, String type) {
         super(id, firstName, lastName, dob, type);
         this.accInitDate = accInitDate;
-        // TODO Auto-generated constructor stub
     }
     
     public Timestamp getAccInitdate() {

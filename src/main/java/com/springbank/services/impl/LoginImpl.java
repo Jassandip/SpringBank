@@ -16,13 +16,12 @@ import com.springbank.beans.Client;
 import com.springbank.beans.Employee;
 import com.springbank.dao.impl.MySqlDao;
 
-@SessionAttributes("test")
 public class LoginImpl implements LoginServices {
 
-    public static boolean authenticate(String[] idAndPass) throws SQLException {
+    public static String authenticate(String[] idAndPass) throws SQLException {
         System.out.println("Entered asimpl");
-        boolean authenticate = false;
         Connection conn = null;
+        String type = null;
         try {
             conn = MySqlDao.getConnection();
             PreparedStatement ps;
@@ -31,47 +30,15 @@ public class LoginImpl implements LoginServices {
             ps.setString(2, idAndPass[1]);
             ResultSet rs = ps.executeQuery();
             if (rs.next()) {
-                System.out.println(rs.getString("type"));
-                authenticate = true;
+                type = rs.getString("type");
             }
             // worked up to this part
         } catch (SQLException e) {
             System.err.println(e);
-            authenticate = false;
         }
         conn.close();
-        return authenticate;
+        return type;
 
-    }
-
-    public static Account authorize(String[] idAndPass) throws SQLException {
-        System.out.println("Entered asimpl login");
-        Connection conn = null;
-        Account user;
-        try {
-            conn = MySqlDao.getConnection();
-            PreparedStatement ps;
-            ps = conn.prepareStatement("Select * from loggin where id = ? and password = ?;");
-            ps.setString(1, idAndPass[0]);
-            ps.setString(2, idAndPass[1]);
-            ResultSet rs = ps.executeQuery();
-            rs.next();
-            String type = rs.getString("type");
-            conn.close();
-            if (type.equals("employee")) {
-                user = employeeLoader(idAndPass[0]);
-            } else {
-                user = clientLoader(idAndPass[0]);
-            }
-            return user;
-        }
-
-        // worked up to this part
-        catch (SQLException e) {
-            System.err.println(e);
-            user = dummy();
-            return user;
-        }
     }
 
     public static Employee employeeLoader(String id) throws SQLException {
@@ -135,3 +102,49 @@ public class LoginImpl implements LoginServices {
     }
 
 }
+
+// package com.loanapp.dao.impl;
+
+// import org.springframework.beans.factory.annotation.Autowired;
+// import org.springframework.jdbc.core.JdbcTemplate;
+// import org.springframework.stereotype.Service;
+
+// import com.loanapp.beans.LoginBean;
+// import com.loanapp.dao.LoginDao;
+
+// @Service
+// public class LoginDaoImpl implements LoginDao{
+	
+// 	@Autowired
+// 	JdbcTemplate jdbcTemplate;	
+
+// 	@Override
+// 	public boolean authenticateUser(LoginBean loginBean) {
+// 		try {
+// 		int result = jdbcTemplate.queryForObject(
+// 			    "SELECT COUNT(*) FROM loan_app_users where user_login ='"+loginBean.getUsername()+"' and user_pass = '"+loginBean.getPassword()+"'", Integer.class);
+// 		if(result > 0)
+// 			return true;
+// 		else
+// 			return false;
+// 		}catch(Exception ex) {
+// 			ex.printStackTrace();
+// 		}
+// 		return false;
+// 	}
+
+// 	@Override
+// 	public String authorize(LoginBean bean) {
+// 		String result = "";
+// 		try {
+// 		result = jdbcTemplate.queryForObject(
+// 			    "select user_role from loan_app_users where user_login='"+bean.getUsername()+"'", String.class);
+
+// 		}catch(Exception ex) {
+// 			ex.printStackTrace();
+// 		}
+// 		return result;
+// 	}
+	
+
+// }
