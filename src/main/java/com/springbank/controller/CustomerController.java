@@ -1,14 +1,22 @@
 package com.springbank.controller;
 
+import java.io.IOException;
 import java.sql.SQLException;
 import java.util.Map;
 
+import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 
 import com.springbank.beans.Account;
 import com.springbank.beans.Client;
-import com.springbank.services.impl.LoginImpl;
+import com.springbank.beans.SendMoney;
+import com.springbank.services.impl.JDBClogin;
+import com.springbank.services.impl.CustomerServicesImpl;
 
+import org.hibernate.validator.constraints.Mod10Check;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -18,47 +26,28 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.SessionAttributes;
 
+
+
 @Controller
-@SessionAttributes({"id","type"})
+@SessionAttributes({ "id", "type" })
 public class CustomerController {
+    @Autowired
+    CustomerServicesImpl CustomerServicesImpl;
 
     // inject via application.properties
     @Value("${welcome.message:test}")
     private String message = "Hello World";
 
     @RequestMapping("/customer")
-    public String sample(@ModelAttribute("user") Client user, Model model){
-        System.out.println(user.getFirstName());
-        System.out.println("^^^^^");
-        return "customer";
+    public String sample(Map<String, Object> model) {
+        return "/customer";
     }
 
     @RequestMapping(value = "/customer", method = RequestMethod.POST)
-    public String logginmethod(@RequestParam("id") String username, @RequestParam("password") String password,
-            Model model) {
-        System.out.println("11111111");
-        String[] idAndPass = { username, password };
-        try {
-            if (LoginImpl.authenticate(idAndPass)) {
-                Account user = LoginImpl.authorize(idAndPass);
-                model.addAttribute("user", user);
-                model.addAttribute("msg", "Successfully logged in!");
-                // model.addAttribute("type", user.getType());
-                return "loggin";
-            } else {
-                model.addAttribute("msg", "Successfully logged in!");
-                return "loggin";
-            }
-        } catch (SQLException e) {
-            // TODO Auto-generated catch block
-            e.printStackTrace();
-        }
-        return "loggin";
+    public String sendmoney(Map<String, Object> model, @ModelAttribute("sm") SendMoney sm,@ModelAttribute("id") String id){
+        CustomerServicesImpl.sendMoney(id,sm);
+        return "/customer";
     }
-    @ModelAttribute("user")
-    public Client userloader(@ModelAttribute("id") String id) throws SQLException {
-        System.out.println(id);
-        Client user = LoginImpl.clientLoader(id);
-        return user;
-    }
+
+
 }

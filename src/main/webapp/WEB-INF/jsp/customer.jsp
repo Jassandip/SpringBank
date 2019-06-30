@@ -7,12 +7,10 @@ pageEncoding="ISO-8859-1"%>
 </head>
 <body>
     <h1>Customer Dashboard</h1>
-    <p>${username}</p>
-    <p>${msg}</p>
-    <p>${type}</p>
+    <p>${confirmation}</p>
     <form action="/customer" method="POST">
-        Id: <input type="text" name="id"><br>
-        Password: <input type="text" name="password"><br>
+        Send to: <input type="text" name="id" id="id"><br>
+        Amount: <input type="int" name="amount" id="amount"><br>
         <input type="submit" value="Submit">
       </form>
 </body>
