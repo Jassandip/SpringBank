@@ -53,7 +53,7 @@ public class LoginImpl implements LoginServices {
             ResultSet rs = ps.executeQuery();
             rs.next();
             user = new Employee(rs.getString("id"), rs.getString("firstname"), rs.getString("lastname"),
-                    rs.getDate("dob"), rs.getTimestamp("accinitdate"), "employee");
+                    rs.getDate("dob"), rs.getTimestamp("accinitdate"),rs.getInt("intid"), "employee");
             conn.close();
             return user;
 
