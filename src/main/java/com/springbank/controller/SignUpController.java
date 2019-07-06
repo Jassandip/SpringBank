@@ -30,14 +30,14 @@ public class SignUpController {
     }
 
     @RequestMapping(value = "/signup", method = RequestMethod.POST)
-    public String logginmethod(Model model,@ModelAttribute("account") Account account, @ModelAttribute("login") Login login) {
-        System.out.println("Entered loggin post method");
+    public String loginmethod(Model model,@ModelAttribute("account") Account account, @ModelAttribute("login") Login login) {
+        System.out.println("Entered login post method");
         System.out.println(new Timestamp(System.currentTimeMillis()));
         SignupImpl si = new SignupImpl();
         System.out.println(account.getDob());
         System.out.println(account.getType());
         if (si.Login(login) & si.Account(account)) {
-            return "loggin";
+            return "login";
         } else {
             model.addAttribute("msg","Were not able to make the account, try again!");
             return "signup";

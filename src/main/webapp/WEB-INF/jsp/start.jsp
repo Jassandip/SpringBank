@@ -9,9 +9,9 @@ pageEncoding="ISO-8859-1"%>
     </head>
     <body>
     <h1>Welcome to SpringBank6</h1>
-        <p>Would you like to loggin or create a new account?<p>
-            <form action="/loggin" method="GET">
-                <input type="submit" value="Loggin">
+        <p>Would you like to login or create a new account?<p>
+            <form action="/login" method="GET">
+                <input type="submit" value="login">
             </form>
             <form action="/signup" method="GET">
                 <input type="submit" value="Signup">

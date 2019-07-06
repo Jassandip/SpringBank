@@ -6,13 +6,13 @@ pageEncoding="ISO-8859-1"%>
 
 </head>
 <body>
-    <h1>Loggin</h1>
+    <h1>login</h1>
     <p>${msg}</p>
     <p>${type}</p>
-    <form action="/loggin" method="POST">
+    <form action="/login" method="POST">
         Id: <input type="text" name="id" id="id"><br>
         Password: <input type="text" name="password" id="id"><br>
-        <input type="submit" value="Submit" id="logginSubmit">
+        <input type="submit" value="Submit" id="loginSubmit">
       </form>
 </body>
 </html>

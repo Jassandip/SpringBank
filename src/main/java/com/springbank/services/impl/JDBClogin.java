@@ -10,7 +10,7 @@ public class JDBClogin {
     JdbcTemplate jdbcTemplate;
 
     public String authenticate(String[] idAndString){
-    String sql = "SELECT TYPE FROM LOGGIN WHERE id = ? AND password = ?;";
+    String sql = "SELECT TYPE FROM login WHERE id = ? AND password = ?;";
     String type = (String) jdbcTemplate.queryForObject(sql, new Object[] { idAndString[0],idAndString[1] }, String.class);
     return type;
     }

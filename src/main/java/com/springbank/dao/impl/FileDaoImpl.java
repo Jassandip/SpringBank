@@ -17,7 +17,7 @@ public class FileDaoImpl implements AccountDao {
     }
 
     public static Boolean checkId(String[] idAndPass){
-        try(FileInputStream f= new FileInputStream("LoggInId.java")){
+        try(FileInputStream f= new FileInputStream("loginId.java")){
             int i=0;
             String idSaved = "";
             while((i=f.read())!=-1){    
@@ -34,7 +34,7 @@ public class FileDaoImpl implements AccountDao {
 }
 
     public static Boolean checkPass(String[] idAndPass){
-        try(FileInputStream f= new FileInputStream("LoggInPass.java")){
+        try(FileInputStream f= new FileInputStream("loginPass.java")){
             int i=0;
             String passSaved = "";
             while((i=f.read())!=-1){    

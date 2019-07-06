@@ -25,7 +25,7 @@ public class LoginImpl implements LoginServices {
         try {
             conn = MySqlDao.getConnection();
             PreparedStatement ps;
-            ps = conn.prepareStatement("Select * from loggin where id = ? and password = ?;");
+            ps = conn.prepareStatement("Select * from login where id = ? and password = ?;");
             ps.setString(1, idAndPass[0]);
             ps.setString(2, idAndPass[1]);
             ResultSet rs = ps.executeQuery();
@@ -61,7 +61,7 @@ public class LoginImpl implements LoginServices {
         // worked up to this part
         catch (SQLException e) {
             System.err.println(e);
-            // dummy user incase loggin fails
+            // dummy user incase login fails
             user = new Employee("id", "firstname", "lastname", new Date(01 / 01 / 2001),
                     new Timestamp(System.currentTimeMillis()), "employee");
             return user;
@@ -88,7 +88,7 @@ public class LoginImpl implements LoginServices {
         }
         catch (SQLException e) {
             System.err.println(e);
-            // dummy user incase loggin fails
+            // dummy user incase login fails
             user = new Client("id", "firstname", "lastname", new Date(01 / 01 / 2001),
                     new Timestamp(System.currentTimeMillis()), "client");
             return user;

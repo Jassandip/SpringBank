@@ -21,7 +21,7 @@ public class AccountServiceImpl implements AccountServices {
         try {
             conn = MySqlDao.getConnection();
             PreparedStatement ps;
-            ps = conn.prepareStatement("Select * from loggin where id = ? and password = ?;");
+            ps = conn.prepareStatement("Select * from login where id = ? and password = ?;");
             ps.setString(1, idAndPass[0]);
             ps.setString(2, idAndPass[1]);
             ResultSet rs = ps.executeQuery();
@@ -45,7 +45,7 @@ public class AccountServiceImpl implements AccountServices {
     //     try {
     //         conn = MySqlDao.getConnection();
     //         PreparedStatement ps;
-    //         ps = conn.prepareStatement("Select * from loggin where id = ? and password = ?;");
+    //         ps = conn.prepareStatement("Select * from login where id = ? and password = ?;");
     //         ps.setString(1, idAndPass[0]);
     //         ps.setString(2, idAndPass[1]);
     //         ResultSet rs = ps.executeQuery();

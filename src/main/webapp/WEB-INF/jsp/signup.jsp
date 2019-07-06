@@ -16,8 +16,8 @@ pageEncoding="ISO-8859-1"%>
                 <option value="client">Client</option>
                 <option value="employee">Employee</option>
               </select><br>
-        Loggin Id: <input type="text" name="id" required><br>
-        Loggin Password: <input type="text" name="password" required><br>
+        login Id: <input type="text" name="id" required><br>
+        login Password: <input type="text" name="password" required><br>
         <input type="submit" value="Submit" required>
       </form>
 </body>

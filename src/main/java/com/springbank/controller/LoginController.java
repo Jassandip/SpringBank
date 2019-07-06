@@ -30,7 +30,7 @@ import org.springframework.web.bind.annotation.SessionAttributes;
 
 @Controller
 @SessionAttributes({ "id", "type" })
-public class LogginController {
+public class LoginController {
     @Autowired
     JDBClogin jdbclogin;
 
@@ -38,7 +38,7 @@ public class LogginController {
     public String home(Map<String, Object> model) {
         Logger logger = LoggerFactory.getLogger(this.getClass().getName());    
         System.out.println("-- in doSomething() --");
-        logger.info("made it to loggin controller");
+        logger.info("made it to login controller");
     return "start";
     }
     
@@ -46,15 +46,15 @@ public class LogginController {
     @Value("${welcome.message:test}")
     private String message = "Hello World";
 
-    @RequestMapping("/loggin")
+    @RequestMapping("/login")
     public String sample(Map<String, Object> model) {
-        return "loggin";
+        return "login";
     }
 
-    @RequestMapping(value = "/loggin", method = RequestMethod.POST)
-    public void logginmethod(@RequestParam("id") String username, @RequestParam("password") String password,
+    @RequestMapping(value = "/login", method = RequestMethod.POST)
+    public void loginmethod(@RequestParam("id") String username, @RequestParam("password") String password,
             Model model, HttpServletResponse response) throws IOException {
-        System.out.println("Entered loggin post method");
+        System.out.println("Entered login post method");
         String[] idAndPass = { username, password };
                 String type = jdbclogin.authenticate(idAndPass);
                 model.addAttribute("id", idAndPass[0]);
@@ -64,8 +64,8 @@ public class LogginController {
             } else if (type.equals("client")) {
                 response.sendRedirect("/customer");
             } else {
-                model.addAttribute("msg", "Unuccessfull loggin!");
-                response.sendRedirect("/loggin");
+                model.addAttribute("msg", "Unuccessfull login!");
+                response.sendRedirect("/login");
     }
 
 }}

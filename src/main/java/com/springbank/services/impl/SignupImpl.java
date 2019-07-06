@@ -49,7 +49,7 @@ public boolean Login(Login login) {
     PreparedStatement ps;
     try{
     ps = conn.prepareStatement(
-        "Insert into loggin (id,password,type) Values (?,?,?);");
+        "Insert into login (id,password,type) Values (?,?,?);");
     ps.setString(1,login.getId());
     ps.setString(2,login.getPassword());
     ps.setString(3,login.getType());

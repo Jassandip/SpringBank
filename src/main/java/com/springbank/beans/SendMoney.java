@@ -4,8 +4,8 @@ import java.math.BigDecimal;
 import java.sql.Timestamp;
 
 public class SendMoney{
-    String from;
-    String to;
+    Integer from;
+    Integer to;
     BigDecimal amount;
     Timestamp time;
 
@@ -26,7 +26,7 @@ public class SendMoney{
     }
 
 
-    public SendMoney(String from, String to, BigDecimal amount) {
+    public SendMoney(Integer from, Integer to, BigDecimal amount) {
         this.from = from;
         this.to = to;
         this.amount = amount;
@@ -38,19 +38,19 @@ public class SendMoney{
         return "SendMoney [amount=" + amount + ", from=" + from + ", time=" + time + ", to=" + to + "]";
     }
 
-    public String getFrom() {
+    public Integer getFrom() {
         return from;
     }
 
-    public void setFrom(String from) {
+    public void setFrom(Integer from) {
         this.from = from;
     }
 
-    public String getTo() {
+    public Integer getTo() {
         return to;
     }
 
-    public void setTo(String to) {
+    public void setTo(Integer to) {
         this.to = to;
     }
 

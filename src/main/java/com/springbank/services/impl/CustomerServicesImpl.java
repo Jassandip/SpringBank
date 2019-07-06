@@ -16,14 +16,10 @@ public class CustomerServicesImpl implements CustomerServices {
     @Autowired
     JdbcTemplate jdbcTemplate;
 
-    public boolean sendMoney(String id, SendMoney sm) {
-        Object[] parameters={id,sm.getId(),sm.getAmount(),sm.getTime()};
-        int[] types={Types.VARCHAR,Types.VARCHAR,Types.INTEGER,Types.TIMESTAMP};
+    public boolean sendMoney(SendMoney sm) {
+        Object[] parameters={sm.getFrom(),sm.getTo(),sm.getAmount(),sm.getTime()};
+        int[] types={Types.INTEGER,Types.INTEGER,Types.DECIMAL,Types.TIMESTAMP};
         jdbcTemplate.update("insert into transactions(`from`,`to`,`amount`,`time`) values(?,?,?,?)",parameters,types);
-        // System.out.println("INSERT INTO transactions (`from`,`to`,`amount`,`time`) VALUES(" + id + "," + sm.getId() + "," + sm.getAmount() + ","
-        //         + sm.getTime() + ");");
-        // jdbcTemplate.update("INSERT INTO transactions (`from`,`to`,`amount`,`time`) VALUES('" + id + "','" + sm.getId() + "'," + sm.getAmount() + ","
-        //         + sm.getTime() + ");");
         return true;
 
     }
