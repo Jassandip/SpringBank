@@ -126,10 +126,5 @@ public class CustomerController {
         model.addAttribute("user", user);
     }
 
-    @GetMapping("/logout")
-    public String getlogout(Model model){
-        model.asMap().clear();
-        return "/loggin";
-    }
 
 }
