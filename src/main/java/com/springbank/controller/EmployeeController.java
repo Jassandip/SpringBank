@@ -135,23 +135,4 @@ public class EmployeeController {
         model.addAttribute("user", user);
 	}
 
-	// public String employee(Model model,@ModelAttribute("id") String id ){
-    //     System.out.println(employeeRepository.findAll());
-    //     return "employee";
-    // }
-
-	// @GetMapping(path="/add") // Map ONLY GET Requests
-	// public @ResponseBody String addNewUser (@RequestParam String id
-	// 		, @RequestParam Integer amount ) {
-	// 	// @ResponseBody means the returned String is the response, not a view name
-	// 	// @RequestParam means it is a parameter from the GET or POST request
-
-	// 	Transactions t = new Transactions();
-	// 	t.setName(name);
-	// 	t.setEmail(email);
-	// 	userRepository.save(n);
-	// 	return "Saved";
-	// }
-
-
 }
